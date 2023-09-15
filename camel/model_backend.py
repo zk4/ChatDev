@@ -20,6 +20,7 @@ import tiktoken
 from camel.typing import ModelType
 from chatdev.utils import log_and_print_online
 
+openai.proxy = "127.0.0.1:7890"
 
 class ModelBackend(ABC):
     r"""Base class for different model backends.
